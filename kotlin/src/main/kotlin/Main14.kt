@@ -10,7 +10,7 @@ fun reward(cargo: String): Float {
     } else {
         0f
     }
-   
+
 }
 
 fun bonusWhen(cargo: String): Float {
@@ -22,4 +22,8 @@ fun bonusWhen(cargo: String): Float {
         else -> 0f
     }
 
+}
+
+fun main() {
+    println(bonusWhen("Gerente"))
 }
