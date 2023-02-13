@@ -27,8 +27,12 @@ fun triangulo(){
     print("Informe o terceiro valor:")
     val lado3 = readLine()
 
-    if(lado1 != "" && lado2 != "" && lado3 != ""){
-        if ((lado1 == lado2) && (lado2 == lado3)){
+    if(lado1 != null && lado2 != null && lado3 != null){
+        val x = lado1.toInt()
+        val y = lado2.toInt()
+        val z = lado3.toInt()
+
+        if (x == y && y == z){
             println("Equilátero")
         } else{
             println("Isóceles ou escaleno")
