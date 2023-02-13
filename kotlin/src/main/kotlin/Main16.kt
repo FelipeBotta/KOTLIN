@@ -5,8 +5,11 @@ fun quadrado(){
     print("Informe o segundo valor:")
     val lado2 = readLine()
 
-    if (lado1 != "" && lado2 != ""){
-        if (lado1 == lado2){
+    if (lado1 != null && lado2 != null){
+        val x = lado1.toInt()
+        val y = lado2.toInt()
+
+        if (x == y){
             println("Quadrado !")
         } else{
             println("Retângulo !")
